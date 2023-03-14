@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func rgbSlider(_ sender: UISlider) {
+    @IBAction func sliderAction(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
