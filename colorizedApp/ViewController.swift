@@ -8,15 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var viewColor: UIView!
+    @IBOutlet var viewColor: UIView!
     
-    @IBOutlet weak var red: UILabel!
-    @IBOutlet weak var green: UILabel!
-    @IBOutlet weak var blue: UILabel!
+    @IBOutlet var red: UILabel!
+    @IBOutlet var green: UILabel!
+    @IBOutlet var blue: UILabel!
     
-    @IBOutlet weak var redSlider: UISlider!
-    @IBOutlet weak var greenSlider: UISlider!
-    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
