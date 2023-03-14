@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         )
         
         red.text = String(format: "%.2f", redSlider)
-        green.text = String(format: "%.2f", redSlider)
-        blue.text = String(format: "%.2f", redSlider)
+        green.text = String(format: "%.2f", greenSlider)
+        blue.text = String(format: "%.2f", blueSlider)
     }
     
 }
