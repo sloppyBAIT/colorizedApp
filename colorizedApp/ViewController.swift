@@ -33,10 +33,10 @@ class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 2
         )
-        
-        red.text = String(format: "%.2f", redSlider)
-        green.text = String(format: "%.2f", greenSlider)
-        blue.text = String(format: "%.2f", blueSlider)
+
+        red.text = String(format: "%.2f", redSlider.value)
+        green.text = String(format: "%.2f", greenSlider.value)
+        blue.text = String(format: "%.2f", blueSlider.value)
     }
     
 }
