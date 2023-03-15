@@ -10,9 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var viewColor: UIView!
     
-    @IBOutlet var red: UILabel!
-    @IBOutlet var green: UILabel!
-    @IBOutlet var blue: UILabel!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
     
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
@@ -23,9 +23,12 @@ class ViewController: UIViewController {
         
         viewColor.layer.cornerRadius = 20
         
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+        
     }
 
-    
     @IBAction func sliderAction(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -34,9 +37,6 @@ class ViewController: UIViewController {
             alpha: 2
         )
 
-        red.text = String(format: "%.2f", redSlider.value)
-        green.text = String(format: "%.2f", greenSlider.value)
-        blue.text = String(format: "%.2f", blueSlider.value)
     }
     
 }
