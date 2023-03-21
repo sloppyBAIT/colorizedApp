@@ -23,10 +23,6 @@ class ViewController: UIViewController {
         
         viewColor.layer.cornerRadius = 20
         
-        redLabel.text = String(format: "%.2f", redSlider.value)
-        greenLabel.text = String(format: "%.2f", greenSlider.value)
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
-        
     }
 
     @IBAction func sliderAction(_ sender: UISlider) {
@@ -36,8 +32,9 @@ class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 2
         )
-
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
     }
-    
 }
 
